@@ -39,28 +39,39 @@
         class="collapse navbar-collapse d-md-flex justify-content-end"
         id="navbarNav"
       >
-        <ul class="navbar-nav">
+        <ul class="navbar-nav justify-content-between sc-nav-ul">
           <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Faq</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+          <li class="nav-item">
+            <a class="nav-link sc-nav-signup" href="#">Sign Up</a>
+          </li>
         </ul>
       </div>
     </nav>
     <!-- end of navbar -->
     <!-- header -->
-    <header>
+    <header class="sc-wrapper container sc-container ">
       <h1 class="sc-header-logo">SUPERCAMP 10</h1>
-      <h2 class="sc-header-logo2 container sc-container">SUPERCAMP 10</h2>
-
-      <div class="container sc-container">
-        <p class="sc-tagline container sc-container">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae illo
-          voluptate explicabo tempore velit
-        </p>
-        <button class="btn btn-primary btn-lg">Register</button>
-      </div>
+      <h2 class="sc-header-logo2">SUPERCAMP 10</h2>
+      <hr class="sc-line" />
+      <p class="sc-tagline">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae illo
+        voluptate explicabo tempore velit
+      </p>
+      <button class="btn sc-btn-primary">Register</button>
     </header>
+    <!-- end of header -->
+
+    <!-- about -->
+    <div class="about">
+      <div class="container sc-container d-flex">
+        <div class="sc-video"></div>
+        <div class="sc-about-ctx"><h3>About Us</h3></div>
+      </div>
+    </div>
+
     <!-- js bootstrap -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

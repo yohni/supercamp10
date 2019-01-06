@@ -19,6 +19,10 @@ nav {
   padding: 50px 0 !important;
 }
 
+.sc-nav-ul {
+  width: 64%;
+}
+
 .nav-item {
   text-transform: uppercase;
   font-size: 0.96em;
@@ -29,6 +33,14 @@ nav {
   margin-right: auto;
 }
 
+.sc-nav-signup {
+  border: #36a6ef solid 2px;
+  color: #36a6ef !important;
+  border-radius: 2px;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
 @media (min-width: 992px) {
   .sc-container {
     max-width: 960px !important;
@@ -36,27 +48,54 @@ nav {
 }
 
 /* header */
-header {
-  height: 700px;
+.sc-wrapper {
+  height: 500px;
   width: 100%;
   display: block;
-  padding: 20px 10%;
-  overflow: hidden;
+  padding: 20px 0;
+  background: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 100%;
 }
 .sc-header-logo {
   margin-top: 36px;
   font-family: "Montserrat-Extra-Bold", sans-serif;
   font-size: 6.4em;
   position: relative;
-  right: 5%;
+  right: 12%;
   color: #f1f1f1;
   opacity: 0.99;
-  letter-spacing: -2px;
+  letter-spacing: -2.5px;
 }
 .sc-header-logo2 {
   font-family: "Montserrat-Extra-Bold", sans-serif;
   font-size: 3.4em;
-  margin-top: -64px;
+  margin-top: -68px;
   letter-spacing: -2px;
   opacity: 0.8;
+}
+
+.sc-tagline {
+  margin-bottom: 64px;
+  max-width: 300px;
+  letter-spacing: 0.5px;
+}
+
+.sc-btn-primary {
+  background: #36a6ef;
+  padding: 8px 32px;
+  color: #f1f1f1;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: relative;
+  left: 140px;
+}
+
+.sc-line {
+  margin: 32px auto 64px 0;
+  background: #36a6ef;
+  width: 100px;
+  height: 5px;
+  border-radius: 1.2px;
 }

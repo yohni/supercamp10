@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <!-- css bootstrap 4 -->
     <link
       rel="stylesheet"
@@ -15,10 +15,13 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-
+    
     <!-- css main -->
     <link rel="stylesheet" href="css/main.css" />
     <title>Supercamp 10</title>
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    
+    
   </head>
   <body>
     <!-- navbar menu -->
@@ -66,12 +69,437 @@
 
     <!-- about -->
     <div class="about">
-      <div class="container sc-container d-flex">
-        <div class="sc-video"></div>
-        <div class="sc-about-ctx"><h3>About Us</h3></div>
+      <div class="container sc-container">
+        <div class="row">
+
+            <div class="col-md-6 col-sm-12 video-container animateMe" data-animation="fadeInUp">
+                <iframe
+                  width="500"
+                  height="281"
+                  src="https://www.youtube.com/embed/oIqvGIhggZY"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <div class="sc-about-ctx col-md-6 col-sm-12 d-flex justify-content-end animateMe"  data-animation="fadeInUp" data-animation-delay="0.25s">
+                <div class="sc-about-wrap d-flex flex-column">
+                  <h3 class="sc-sub-title">About Us</h3>
+                  <hr class="sc-line-mini" />
+                  <p class="sc-about-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ad
+                    ducimus vel incidunt. Molestiae sunt veniam eligendi adipisci
+                    omnis at dolorem vel quae voluptatum quibusdam placeat qui
+                    laborum, mollitia inventore?
+                  </p>
+                  <button class="btn sc-btn-rounded ml-auto">
+                    <svg
+                      width="36"
+                      height="32"
+                      viewBox="0 0 36 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M21.7684 1.33273C22.9004 0.505649 24.4885 0.752827 25.3156 1.88482L35.7115 16.1132L25.3041 30.1309C24.4684 31.2565 22.8784 31.4915 21.7527 30.6558C20.6271 29.8201 20.3921 28.2301 21.2278 27.1045L27.5125 18.6396H3.44117C2.03922 18.6396 0.90271 17.5031 0.90271 16.1011C0.90271 14.6992 2.03922 13.5627 3.44117 13.5627H27.5603L21.2163 4.87995C20.3892 3.74796 20.6364 2.15981 21.7684 1.33273Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+        </div>
       </div>
     </div>
 
+    <!-- services -->
+    <div class="services">
+      <div class="container sc-container">
+        <h3 class="sc-sub-title text-center">Services</h3>
+        <hr class="sc-line-mini sc-left-step" />
+        <div class="sc-services-wrapper">
+          <div class="sc-services-items row text-center">
+
+            <div class="col-sm-12 col-md-3 sc-services-item animateMe" data-animation="fadeInUp">
+              <div class="sc-services-image-wrapper">
+                <image src="images/studying.png" class="sc-services-image" />
+              </div>
+              <div class="sc-services-bold-txt-wrapper">
+                <b>Bimbingan belajar intensif selama 40 hari</b>
+              </div>
+              <div class="sc-services-detail-item">
+                <p class="sc-services-detail-item-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-3 sc-services-item  animateMe" data-animation="fadeInUp" data-animation-delay="0.1s">
+              <div class="sc-services-image-wrapper">
+                <image src="images/book.png" alt="" class="sc-services-image" />
+              </div>
+              <div class="sc-services-bold-txt-wrapper">
+                <b>Modul belajar yang sudah dirancang khusus</b>
+              </div>
+              <div class="sc-services-detail-item">
+                <p class="sc-services-detail-item-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-3 sc-services-item  animateMe" data-animation="fadeInUp" data-animation-delay="0.2s">
+              <div class="sc-services-image-wrapper">
+                <image
+                  src="images/people-read.png"
+                  alt=""
+                  class="sc-services-image"
+                />
+              </div>
+              <div class="sc-services-bold-txt-wrapper">
+                <b>Mentor yang berpengalaman dalam bidangnya</b>
+              </div>
+              <div class="sc-services-detail-item">
+                <p class="sc-services-detail-item-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-3 sc-services-item animateMe" data-animation="fadeInUp" data-animation-delay="0.3s">
+              <div class="sc-services-image-wrapper">
+                <image
+                  src="images/map-location.png"
+                  alt=""
+                  class="sc-services-image"
+                />
+              </div>
+              <div class="sc-services-bold-txt-wrapper">
+                <b>Berkujung ke Kampus ITS dan sekitarnya</b>
+              </div>
+              <div class="sc-services-detail-item">
+                <p class="sc-services-detail-item-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- timeline -->
+    <section class="cd-horizontal-timeline">
+
+        <h3 class="sc-sub-title text-center">Timeline</h3>
+        <hr class="sc-line-mini sc-left-step" />
+      <div class="timeline">
+        <div class="events-wrapper">
+          <div class="events">
+            <ol>
+              <li><a href="#0" data-date="16/01/2014" class="selected">16 Jan</a></li>
+              <li><a href="#0" data-date="28/02/2014">28 Feb</a></li>
+              <li><a href="#0" data-date="20/04/2014">20 Mar</a></li>
+              <li><a href="#0" data-date="20/05/2014">20 May</a></li>
+              <li><a href="#0" data-date="09/07/2014">09 Jul</a></li>
+              <li><a href="#0" data-date="30/08/2014">30 Aug</a></li>
+              <li><a href="#0" data-date="15/09/2014">15 Sep</a></li>
+              <li><a href="#0" data-date="01/11/2014">01 Nov</a></li>
+              <li><a href="#0" data-date="10/12/2014">10 Dec</a></li>
+              <li><a href="#0" data-date="19/01/2015">29 Jan</a></li>
+              <li><a href="#0" data-date="03/03/2015">3 Mar</a></li>
+            </ol>
+    
+            <span class="filling-line" aria-hidden="true"></span>
+          </div> <!-- .events -->
+        </div> <!-- .events-wrapper -->
+          
+        <ul class="cd-timeline-navigation">
+          <li><a href="#0" class="prev inactive">Prev</a></li>
+          <li><a href="#0" class="next">Next</a></li>
+        </ul> <!-- .cd-timeline-navigation -->
+      </div> <!-- .timeline -->
+    
+      <div class="events-content">
+        <ol>
+          <li class="selected" data-date="16/01/2014">
+            <h4>Horizontal Timeline</h4>
+            <em>January 16th, 2014</em>
+            <p>	
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            </p>
+          </li>
+    
+          <li data-date="28/02/2014">
+            <h4>Event title here</h4>
+            <em>February 28th, 2014</em>
+            <p>	
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            </p>
+          </li>
+    
+          <li data-date="20/04/2014">
+            <h4>Event title here</h4>
+            <em>March 20th, 2014</em>
+            <p>	
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            </p>
+          </li>
+    
+          <li data-date="20/05/2014">
+            <h4>Event title here</h4>
+            <em>May 20th, 2014</em>
+            <p>	
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            </p>
+          </li>
+    
+          <li data-date="09/07/2014">
+            <h4>Event title here</h4>
+            <em>July 9th, 2014</em>
+            <p>	
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            </p>
+          </li>
+    
+          <li data-date="30/08/2014">
+            <h4>Event title here</h4>
+            <em>August 30th, 2014</em>
+            <p>	
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            </p>
+          </li>
+    
+          <li data-date="15/09/2014">
+            <h4>Event title here</h4>
+            <em>September 15th, 2014</em>
+            <p>	
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            </p>
+          </li>
+    
+          <li data-date="01/11/2014">
+            <h4>Event title here</h4>
+            <em>November 1st, 2014</em>
+            <p>	
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            </p>
+          </li>
+    
+          <li data-date="10/12/2014">
+            <h4>Event title here</h4>
+            <em>December 10th, 2014</em>
+            <p>	
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            </p>
+          </li>
+    
+          <li data-date="19/01/2015">
+            <h4>Event title here</h4>
+            <em>January 19th, 2015</em>
+            <p>	
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            </p>
+          </li>
+    
+          <li data-date="03/03/2015">
+            <h4>Event title here</h4>
+            <em>March 3rd, 2015</em>
+            <p>	
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            </p>
+          </li>
+        </ol>
+      </div> <!-- .events-content -->
+    </section>
+    <!-- end of timeline -->
+
+    <!-- gallery -->
+    <div class="gallery">
+      <div class="container sc-container">
+        <h3 class="sc-sub-title text-left">Gallery</h3>
+        <hr class="sc-line-mini sc-left-step sc-line-left" />
+        <ul class="rag__set">
+          <li class="rag__item rag__item--1x1 rag__item--p1">
+            <div class="farc--1x1"><div class="farc--fixed">1</div></div>
+          </li>
+          <li class="rag__item rag__item--1x1 rag__item--p2">
+            <div class="farc--1x1"><div class="farc--fixed">2</div></div>
+          </li>
+          <li class="rag__item rag__item--1x1 rag__item--p3">
+            <div class="farc--1x1"><div class="farc--fixed">3</div></div>
+          </li>
+          <li class="rag__item rag__item--1x1 rag__item--p4">
+            <div class="farc--1x1"><div class="farc--fixed">4</div></div>
+          </li>
+          <li class="rag__item rag__item--1x2 rag__item--p5">
+            <div class="farc--1x2"><div class="farc--fixed">5</div></div>
+          </li>
+          <li class="rag__item rag__item--2x1 rag__item--p6">
+            <div class="farc--2x1"><div class="farc--fixed">6</div></div>
+          </li>
+          <li class="rag__item rag__item--2x2 rag__item--p7">
+            <div class="farc--1x1"><div class="farc--fixed">7</div></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end of gallery -->
+
+    <!-- faq -->
+    <div class="faq">
+      <div class="container sc-container">
+        <h3 class="sc-sub-title text-left">FAQ</h3>
+        <hr class="sc-line-mini sc-left-step sc-line-left" />
+        <div class="row">
+          <div class="col-sm-12 col-md-7">
+            <div class="sc-contact-wrapper">
+              <h4 class="sc-question animateMe" data-animation="jackInTheBox">Have questions about Supercamp 10?</h4>
+              <div class="sc-contact">
+                <small>Contact Us Anytime</small>
+                <div class="sc-mail">me@supercamp.id</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-5">
+            <ul class="sc-faq-ul">
+              <li>
+                <div class="sc-list d-flex flex-row">
+                  <div class="sc-list-title">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit?
+                  </div>
+                  <a
+                    class=""
+                    data-toggle="collapse"
+                    href="#list1"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="list1"
+                    ><ion-icon name="add" id="icon-item1"></ion-icon
+                  ></a>
+                </div>
+                <div class="collapse" id="list1">
+                  <div class="">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. Nihil anim keffiyeh
+                    helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident.
+                  </div>
+                </div>
+              </li>
+              <li>
+                  <div class="sc-list d-flex flex-row">
+                    <div class="sc-list-title">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit?
+                    </div>
+                    <a
+                      class=""
+                      data-toggle="collapse"
+                      href="#list2"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="list2"
+                      ><ion-icon name="add" id="icon-item2"></ion-icon
+                    ></a>
+                  </div>
+                  <div class="collapse" id="list2">
+                    <div class="">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident.
+                    </div>
+                  </div>
+                </li>
+                <li>
+                    <div class="sc-list d-flex flex-row">
+                      <div class="sc-list-title">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit?
+                      </div>
+                      <a
+                        class=""
+                        data-toggle="collapse"
+                        href="#list3"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="list3"
+                        ><ion-icon name="add" id="icon-item3"></ion-icon
+                      ></a>
+                    </div>
+                    <div class="collapse" id="list3">
+                      <div class="">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life
+                        accusamus terry richardson ad squid. Nihil anim keffiyeh
+                        helvetica, craft beer labore wes anderson cred nesciunt
+                        sapiente ea proident.
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                      <div class="sc-list d-flex flex-row">
+                        <div class="sc-list-title">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit?
+                        </div>
+                        <a
+                          class=""
+                          data-toggle="collapse"
+                          href="#list4"
+                          role="button"
+                          aria-expanded="false"
+                          aria-controls="list4"
+                          ><ion-icon name="add" id="icon-item4"></ion-icon
+                        ></a>
+                      </div>
+                      <div class="collapse" id="list4">
+                        <div class="">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life
+                          accusamus terry richardson ad squid. Nihil anim keffiyeh
+                          helvetica, craft beer labore wes anderson cred nesciunt
+                          sapiente ea proident.
+                        </div>
+                      </div>
+                    </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="support">
+      <div class="container sc-container">
+          <h3 class="sc-sub-title text-center d-block">Support By</h3>
+          <hr class="sc-line-mini sc-left-step" />
+        <div class="d-flex sc-support-wrapper">
+          <a href="http://lazimku.com/" target="blank" class="animateMe" data-animation="fadeInUp"><image src="images/lazim.png" alt=""/></a>
+          <a href="http://www.nu.or.id/" target="blank" class="animateMe" data-animation="fadeInUp" data-animation-delay="0.25s"><image src="images/NU.png" alt=""/></a>
+          
+        </div>
+      </div>
+    </div>
+
+    <footer>
+        <div class="container sc-container">
+            <div class="footer-body d-flex flex-row justify-content-md-between justify-content-sm-center flex-wrap align-item-center align-content-between">
+                <div class="footer-brand d-inline-flex flex-row align-item-center mx-auto ml-md-0">
+                    
+                    <span>SUPERCAMP</span>
+                </div>
+            <span class="sc-address">Alamat Pojok Wates Kediri Jatim/ line:finan.yohni</span>
+                <div class="footer-social d-inline-flex flex-row align-item-center mx-auto mr-lg-0">
+                    <a href="http://facebook.com/beasiswasupercamp" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="http://twitter.com/beasiswasupercamp" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="http://instagram.com/beasiswasupercamp" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+            </div>
+            <div class="footer-copy d-block text-center">
+                <small class="text-muted">&copy; Copyright 2017 Supercamp &bullet; </small>
+            </div>
+        </div>
+    </footer>
+    
     <!-- js bootstrap -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -88,8 +516,36 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-
+    
+    <!-- <script src="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script> -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"> </script>
     <!-- js main -->
+    
+
+    <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+          $("ion-icon").click(function(event) {
+            var iditem = event.target.id;
+            if(event.target.name == "add"){
+            //   $(this).css({
+            //   "-ms-transform": "rotate(45deg)",
+            //   "-webkit-transform": "rotate(45deg)",
+            //   transform: "rotate(45deg)"
+            // });
+            $(this).attr("name","close");
+            }else{
+              $(this).attr("name","add");
+            }
+          });
+        });
+    </script>
+    <style>
+    .animateMe{
+  opacity: 0 !important;
+}
+    </style>
   </body>
 </html>

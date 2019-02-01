@@ -8,6 +8,8 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    
     <!-- css bootstrap 4 -->
     <link
       rel="stylesheet"
@@ -24,6 +26,13 @@
     
   </head>
   <body>
+    <div class="close-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" version="1.1" height="32px" viewBox="0 0 64 64" enable-background="new 0 0 64 64">
+          <g>
+            <path fill="#FFFFFF" d="M28.941,31.786L0.613,60.114c-0.787,0.787-0.787,2.062,0,2.849c0.393,0.394,0.909,0.59,1.424,0.59   c0.516,0,1.031-0.196,1.424-0.59l28.541-28.541l28.541,28.541c0.394,0.394,0.909,0.59,1.424,0.59c0.515,0,1.031-0.196,1.424-0.59   c0.787-0.787,0.787-2.062,0-2.849L35.064,31.786L63.41,3.438c0.787-0.787,0.787-2.062,0-2.849c-0.787-0.786-2.062-0.786-2.848,0   L32.003,29.15L3.441,0.59c-0.787-0.786-2.061-0.786-2.848,0c-0.787,0.787-0.787,2.062,0,2.849L28.941,31.786z"/>
+          </g>
+        </svg>
+    </div>
     <!-- navbar menu -->
     <nav class="navbar navbar-expand-lg navbar-light container sc-container">
       <a class="navbar-brand sc-brand" href="#">Supercamp</a>
@@ -43,12 +52,12 @@
         id="navbarNav"
       >
         <ul class="navbar-nav justify-content-between sc-nav-ul">
-          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Faq</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sc-tentang">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sc-fasilitas">Fasilitas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sc-faq">Faq</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
           <li class="nav-item">
-            <a class="nav-link sc-nav-signup" href="#">Sign Up</a>
+            <a class="nav-link sc-nav-signup" href="#">Daftar</a>
           </li>
         </ul>
       </div>
@@ -60,15 +69,16 @@
       <h2 class="sc-header-logo2">SUPERCAMP 10</h2>
       <hr class="sc-line" />
       <p class="sc-tagline">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae illo
-        voluptate explicabo tempore velit
+        Ahlinya Masuk ITS dan Fakultas Kedokteran
       </p>
-      <button class="btn sc-btn-primary">Register</button>
+      <button class="btn sc-btn-primary wave-btn">
+        Daftar
+      </button>
     </header>
     <!-- end of header -->
 
     <!-- about -->
-    <div class="about">
+    <div class="about" id="sc-tentang">
       <div class="container sc-container">
         <div class="row">
 
@@ -85,15 +95,12 @@
 
               <div class="sc-about-ctx col-md-6 col-sm-12 d-flex justify-content-end animateMe"  data-animation="fadeInUp" data-animation-delay="0.25s">
                 <div class="sc-about-wrap d-flex flex-column">
-                  <h3 class="sc-sub-title">About Us</h3>
+                  <h3 class="sc-sub-title">Apa Itu ?</h3>
                   <hr class="sc-line-mini" />
                   <p class="sc-about-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ad
-                    ducimus vel incidunt. Molestiae sunt veniam eligendi adipisci
-                    omnis at dolorem vel quae voluptatum quibusdam placeat qui
-                    laborum, mollitia inventore?
+                    Supercamp merupakan bimbingan intensif dan spiritual untuk menghadapi tes seleksi masuk PTN(Khususnya ITS dan Fakultas Kedokteran) yang diselenggarakan secara gratis oleh Lazim bekerja sama dengan PCNU Surabaya untuk membantu siswa/i SMA/sederajat di Indonesia yang memiliki kemampuan akademis tetapi kurang mampu secara ekonomi.
                   </p>
-                  <button class="btn sc-btn-rounded ml-auto">
+                  <button class="btn sc-btn-rounded ml-auto wave-btn">
                     <svg
                       width="36"
                       height="32"
@@ -116,9 +123,9 @@
     </div>
 
     <!-- services -->
-    <div class="services">
+    <div class="services" id="sc-fasilitas">
       <div class="container sc-container">
-        <h3 class="sc-sub-title text-center">Services</h3>
+        <h3 class="sc-sub-title text-center">Fasilitas</h3>
         <hr class="sc-line-mini sc-left-step" />
         <div class="sc-services-wrapper">
           <div class="sc-services-items row text-center">
@@ -128,11 +135,11 @@
                 <image src="images/studying.png" class="sc-services-image" />
               </div>
               <div class="sc-services-bold-txt-wrapper">
-                <b>Bimbingan belajar intensif selama 40 hari</b>
+                <b>Bimbingan belajar intensif</b>
               </div>
               <div class="sc-services-detail-item">
                 <p class="sc-services-detail-item-txt">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Kegiatan belajar mengajar dilakukan secara intensif selama 40 hari
                 </p>
               </div>
             </div>
@@ -146,7 +153,7 @@
               </div>
               <div class="sc-services-detail-item">
                 <p class="sc-services-detail-item-txt">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Modul belajar telah dirancang sesuai dengan kisi - kisi ujian masuk PTN
                 </p>
               </div>
             </div>
@@ -160,11 +167,11 @@
                 />
               </div>
               <div class="sc-services-bold-txt-wrapper">
-                <b>Mentor yang berpengalaman dalam bidangnya</b>
+                <b>Mentor yang berpengalaman</b>
               </div>
               <div class="sc-services-detail-item">
                 <p class="sc-services-detail-item-txt">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Mentor membantu siswa dalam kegaitan belajar mengajar dan memahami soal
                 </p>
               </div>
             </div>
@@ -178,11 +185,11 @@
                 />
               </div>
               <div class="sc-services-bold-txt-wrapper">
-                <b>Berkujung ke Kampus ITS dan sekitarnya</b>
+                <b>Berkunjung ke Beberapa Universitas di Surabaya</b>
               </div>
               <div class="sc-services-detail-item">
                 <p class="sc-services-detail-item-txt">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Siswa dikenalkan dengan lingkungan kampus untuk memacu semangat siswa
                 </p>
               </div>
             </div>
@@ -349,6 +356,12 @@
     </div>
     <!-- end of gallery -->
 
+    <!-- testimonial -->
+
+    <div class="cmngsoon-wrapper">
+        <img src="images/comingsoon.jpeg" alt="" class="cmng-soon">
+    </div>
+
     <!-- faq -->
     <div class="faq">
       <div class="container sc-container">
@@ -357,10 +370,12 @@
         <div class="row">
           <div class="col-sm-12 col-md-7">
             <div class="sc-contact-wrapper">
-              <h4 class="sc-question animateMe" data-animation="jackInTheBox">Have questions about Supercamp 10?</h4>
+              <h4 class="sc-question animateMe" data-animation="jackInTheBox">Punya Pertanyaan Seputar Supercamp 10?</h4>
               <div class="sc-contact">
-                <small>Contact Us Anytime</small>
-                <div class="sc-mail">me@supercamp.id</div>
+                <small>Hubungi kami di</small>
+                <div class="sc-mail">beasiswasupercamp@gmail.com</div>
+                <small class="text-center">atau</small>
+                <div class="sc-no">085707349072/M.Aziz Mubarok</div>
               </div>
             </div>
           </div>
@@ -470,7 +485,7 @@
 
     <div class="support">
       <div class="container sc-container">
-          <h3 class="sc-sub-title text-center d-block">Support By</h3>
+          <h3 class="sc-sub-title text-center d-block">Didukung Oleh</h3>
           <hr class="sc-line-mini sc-left-step" />
         <div class="d-flex sc-support-wrapper">
           <a href="http://lazimku.com/" target="blank" class="animateMe" data-animation="fadeInUp"><image src="images/lazim.png" alt=""/></a>
@@ -487,7 +502,7 @@
                     
                     <span>SUPERCAMP</span>
                 </div>
-            <span class="sc-address">Alamat Pojok Wates Kediri Jatim/ line:finan.yohni</span>
+            <span class="sc-address">Jl.AR. Hakim Keputih Gang III E No 37A Sukolilo Surabaya</span>
                 <div class="footer-social d-inline-flex flex-row align-item-center mx-auto mr-lg-0">
                     <a href="http://facebook.com/beasiswasupercamp" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
                     <a href="http://twitter.com/beasiswasupercamp" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
@@ -495,7 +510,7 @@
                 </div>
             </div>
             <div class="footer-copy d-block text-center">
-                <small class="text-muted">&copy; Copyright 2017 Supercamp &bullet; </small>
+                <small class="text-muted">&copy; Copyright 2019 Supercamp &bullet; </small>
             </div>
         </div>
     </footer>
@@ -527,20 +542,25 @@
     <script src="js/main.js"></script>
     <script>
         $(document).ready(function() {
-          $("ion-icon").click(function(event) {
+          $("a ion-icon").click(function(event) {
             var iditem = event.target.id;
             if(event.target.name == "add"){
-            //   $(this).css({
-            //   "-ms-transform": "rotate(45deg)",
-            //   "-webkit-transform": "rotate(45deg)",
-            //   transform: "rotate(45deg)"
-            // });
             $(this).attr("name","close");
             }else{
               $(this).attr("name","add");
             }
           });
+
+          $(".navbar-toggler").click(function(event){
+            $(".close-btn").css({"z-index":"11","opacity":"1"});
+          });
+
+          $(".close-btn").click(function(event){
+            $(".show").removeClass("show");
+            $(".close-btn").css({"opacity":"0","z-index":"0"});
+          });
         });
+
     </script>
     <style>
     .animateMe{

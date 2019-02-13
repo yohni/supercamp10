@@ -81,8 +81,8 @@ nav {
 }
 
 .sc-nav-signup {
-  border: #36a6ef solid 2px;
-  color: #36a6ef !important;
+  border: #9b2d5c solid 2px;
+  color: #9b2d5c !important;
   border-radius: 2px;
   padding-left: 16px !important;
   padding-right: 16px !important;
@@ -146,7 +146,7 @@ nav {
 
   .sc-nav-signup:hover {
     border: #f1f1f1 solid 2px;
-    background: #36a6ef;
+    background: #9b2d5c;
     color: #f1f1f1 !important;
   }
 }
@@ -209,7 +209,7 @@ nav {
   width: 100%;
   display: block;
   padding: 20px 0;
-  background: url("../images/bg.png");
+  background-image: url("../images/g838.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: 100%;
@@ -237,21 +237,27 @@ nav {
   margin-bottom: 64px;
   max-width: 300px;
   letter-spacing: 0.5px;
+  font-weight: 600;
 }
 
 .sc-btn-primary {
-  background: #36a6ef;
-  padding: 8px 32px;
+  background: #9b2d5c;
+  padding: 8px 72px;
   color: #f1f1f1;
   font-weight: bold;
   letter-spacing: 2px;
   position: relative;
   left: 140px;
+  transition: all 0.5s;
+}
+
+.sc-btn-primary:hover {
+  background: #e4406f;
 }
 
 .sc-line {
   margin: 32px auto 64px 0;
-  background: #36a6ef;
+  background: #9b2d5c;
   width: 100px;
   height: 5px;
   border-radius: 1.2px;
@@ -321,7 +327,7 @@ nav {
 }
 
 .sc-line-mini {
-  background: #36a6ef;
+  background: #9b2d5c;
   width: 100px;
   height: 2.5px;
   border-radius: 1.2px;
@@ -329,7 +335,7 @@ nav {
 }
 
 .sc-btn-rounded {
-  background: #36a6ef;
+  background: #9b2d5c;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -901,7 +907,7 @@ li {
   right: 0;
   overflow: hidden;
   /**/
-  padding: 15px 20px;
+  /* padding: 15px 20px; */
   font-size: 50px;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -1181,6 +1187,128 @@ li {
 }
 .rag__item:nth-of-type(7) {
   background-color: #34495e;
+}
+
+.sc-gal-img {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 13; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* testimonial */
+
+.sc-car-wrapper {
+  width: 100%;
+  background: linear-gradient(#e4406f, #ea0062);
+  border: none;
+  color: #dfdfdf;
+  padding: 124px;
+  height: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  .sc-car-wrapper {
+    padding: 64px;
+    height: auto;
+  }
+}
+
+.carousel-item {
+  border: none;
+}
+
+.img-circle {
+  border-radius: 100px;
+  border: #dfdfdf solid 2px;
+  width: 116px !important;
+  height: 116px !important;
+  margin-bottom: 32px;
 }
 
 /* faq */

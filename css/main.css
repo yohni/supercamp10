@@ -833,6 +833,23 @@ Main Components
   }
 }
 
+ul .sc-req-ul {
+  list-style: upper-roman !important;
+}
+
+.sc-req-ul li {
+  position: relative !important;
+  /* display: block !important; */
+  opacity: 1 !important;
+  z-index: 4;
+  margin: 8px 0;
+  -webkit-transform: translateX(0%) !important;
+  -moz-transform: translateX(0%) !important;
+  -ms-transform: translateX(0%) !important;
+  -o-transform: translateX(0%) !important;
+  transform: translateX(0%) !important;
+}
+
 /* gallery */
 
 .gallery {

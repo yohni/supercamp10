@@ -7,6 +7,8 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     
@@ -25,6 +27,13 @@
     
   </head>
   <body>
+    <div class="modalmoji" id="modalmojiku">      
+      <div class="modalmoji-wrap">
+          <div><img src="images/happy.png" class="modalmoji-img mx-auto">
+            <p class="mx-auto">Comingsoon...!!!</p></div>
+          <button class="btn sc-btn-primary wave-btn modalmoji-close">OK</button>
+      </div>
+    </div>
     <div class="close-btn">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" version="1.1" height="32px" viewBox="0 0 64 64" enable-background="new 0 0 64 64">
           <g>
@@ -54,9 +63,9 @@
           <li class="nav-item"><a class="nav-link" href="#sc-tentang">Tentang</a></li>
           <li class="nav-item"><a class="nav-link" href="#sc-fasilitas">Fasilitas</a></li>
           <li class="nav-item"><a class="nav-link" href="#sc-faq">Faq</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+          <li class="nav-item"><a class="nav-link belum" href="#">Login</a></li>
           <li class="nav-item">
-            <a class="nav-link sc-nav-signup" href="#">Daftar</a>
+            <a class="nav-link sc-nav-signup belum" href="#">Daftar</a>
           </li>
         </ul>
       </div>
@@ -70,7 +79,7 @@
       <p class="sc-tagline">
         Ahlinya Masuk ITS(Institut Teknologi 10 November) dan Fakultas Kedokteran
       </p>
-      <button class="btn sc-btn-primary wave-btn">
+      <button class="btn sc-btn-primary wave-btn belum">
         Daftar
       </button>
     </header>
@@ -81,7 +90,7 @@
       <div class="container sc-container">
         <div class="row">
 
-            <div class="col-md-6 col-sm-12 video-container animateMe" data-animation="fadeInUp">
+            <div class="col-md-7 col-sm-12 video-container animateMe" data-animation="fadeInUp">
                 <iframe
                   width="500"
                   height="281"
@@ -92,7 +101,7 @@
                 ></iframe>
               </div>
 
-              <div class="sc-about-ctx col-md-6 col-sm-12 d-flex justify-content-end animateMe"  data-animation="fadeInUp" data-animation-delay="0.25s">
+              <div class="sc-about-ctx col-md-5 col-sm-12 d-flex justify-content-end animateMe"  data-animation="fadeInUp" data-animation-delay="0.25s">
                 <div class="sc-about-wrap d-flex flex-column">
                   <h3 class="sc-sub-title">Apa Itu ?</h3>
                   <hr class="sc-line-mini" />
@@ -117,6 +126,51 @@
                   </button> -->
                 </div>
               </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sc-addition">
+      <div class="container sc-container row">
+        <div class="col-md-6 col-sm-12">
+          <div class="sc-req-wrapp">
+            <h3 class="sc-sub-title">Prasyarat</h3>
+            <hr class="sc-line-mini sc-left-step sc-line-left" />
+              <ol class="sc-req-ul">
+                <li>Kartanu/Surat Keterangan NU</li>
+                <li>Kartu Tanda Peserta <strong>Bidikmisi</strong> atau Surat Keterangan Tidak Mampu(Memuat penghasilan orang tua)</li>
+                <li>Kartu Tanda Pelajar</li>
+                <li>Kartu Peserta SNMPTN</li>
+                <li>Raport Semester 3, 4, 5</li>
+                <li>Pas foto 4x6</li>
+                <li>Bukti Pendaftaran UTBK</li>
+              </ol>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 left-border">
+          <div class="d-flex justify-content-between align-item-center logosc">
+            <img src="images/sc10.png" alt="" class="mx-auto">
+          </div>
+          <!-- <div class="mx-auto">
+            <h4 class="text-center">Seleksi Tulis Supercamp10</h4>
+            <hr class="sc-line-mini sc-left-step sc-line-left" />
+            <div class="sc-seleksi">
+              <ul>
+                <li>
+                  <div class="">
+                    <ion-icon name="pin"></ion-icon>
+                    <p>...</p>
+                  </div>
+                  <div class="">
+                      <ion-icon name="time"></ion-icon>
+                      <p>....</p>
+                    </div>
+                    
+                </li>
+              </ul>
+            </div>
+          </div> -->
+
         </div>
       </div>
     </div>
@@ -231,16 +285,7 @@
             <h4>Pendaftaran Supercamp10</h4>
             <em>01 Maret 2019</em>
           	
-              <h6>Prasyarat:</h6>
-              <ul class="sc-req-ul">
-                <li>Kartanu/Surat Keterangan NU</li>
-                <li>Kartu Tanda Peserta <strong>Bidikmisi</strong> atau Surat Keterangan Tidak Mampu(Memuat penghasilan orang tua)</li>
-                <li>Kartu Tanda Pelajar</li>
-                <li>Kartu Peserta SNMPTN</li>
-                <li>Raport Semester 3, 4, 5</li>
-                <li>Pas foto 4x6</li>
-                <li>Bukti Pendaftaran UTBK</li>
-              </ul>
+              
             
           </li>
     
@@ -297,6 +342,7 @@
     </section>
     <!-- end of timeline -->
 
+    
     <!-- gallery -->
     <div class="gallery">
       <div class="container sc-container">
@@ -304,25 +350,25 @@
         <hr class="sc-line-mini sc-left-step sc-line-left" />
         <ul class="rag__set">
           <li class="rag__item rag__item--1x1 rag__item--p1">
-            <div class="farc--1x1"><div class="farc--fixed"><img src="images/bg.png" alt="" class="sc-gal-img" id="iww"></div></div>
+            <div class="farc--1x1"><div class="farc--fixed"><img src="images/doc1.jpg" alt="" class="sc-gal-img" id="iww"></div></div>
           </li>
           <li class="rag__item rag__item--1x1 rag__item--p2">
-            <div class="farc--1x1"><div class="farc--fixed">2</div></div>
+            <div class="farc--1x1"><div class="farc--fixed"><img src="images/doc2.jpg" alt="" class="sc-gal-img" id="iww"></div></div>
           </li>
           <li class="rag__item rag__item--1x1 rag__item--p3">
-            <div class="farc--1x1"><div class="farc--fixed">3</div></div>
+            <div class="farc--1x1"><div class="farc--fixed"><img src="images/doc3.jpg" alt="" class="sc-gal-img" id="iww"></div></div>
           </li>
           <li class="rag__item rag__item--1x1 rag__item--p4">
-            <div class="farc--1x1"><div class="farc--fixed">4</div></div>
+            <div class="farc--1x1"><div class="farc--fixed"><img src="images/doc4.jpg" alt="" class="sc-gal-img" id="iww"></div></div>
           </li>
           <li class="rag__item rag__item--1x2 rag__item--p5">
-            <div class="farc--1x2"><div class="farc--fixed">5</div></div>
+            <div class="farc--1x2"><div class="farc--fixed"><img src="images/doc1.jpg" alt="" class="sc-gal-img" id="iww"></div></div>
           </li>
           <li class="rag__item rag__item--2x1 rag__item--p6">
-            <div class="farc--2x1"><div class="farc--fixed">6</div></div>
+            <div class="farc--2x1"><div class="farc--fixed"><img src="images/doc2.jpg" alt="" class="sc-gal-img" id="iww"></div></div>
           </li>
           <li class="rag__item rag__item--2x2 rag__item--p7">
-            <div class="farc--1x1"><div class="farc--fixed">7</div></div>
+            <div class="farc--1x1"><div class="farc--fixed"><img src="images/doc3.jpg" alt="" class="sc-gal-img" id="iww"></div></div>
           </li>
         </ul>
       </div>
@@ -404,9 +450,9 @@
           <div class="col-sm-12 col-md-5">
             <ul class="sc-faq-ul">
               <li>
-                <div class="sc-list d-flex flex-row">
+                <div class="sc-list d-flex flex-row justify-content-between">
                   <div class="sc-list-title">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit?
+                    Apakah lulusan 2 tahun lalu boleh mendaftar?
                   </div>
                   <a
                     class=""
@@ -420,17 +466,14 @@
                 </div>
                 <div class="collapse" id="list1">
                   <div class="">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life
-                    accusamus terry richardson ad squid. Nihil anim keffiyeh
-                    helvetica, craft beer labore wes anderson cred nesciunt
-                    sapiente ea proident.
+                    Lulusan 2 tahun yang lalu diperbolehkan mendaftar namun akan diutamakan lulusan tahun ini.
                   </div>
                 </div>
               </li>
               <li>
-                  <div class="sc-list d-flex flex-row">
+                  <div class="sc-list d-flex flex-row justify-content-between">
                     <div class="sc-list-title">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit?
+                      Bagaimana hidup selama mengikuti supercamp?
                     </div>
                     <a
                       class=""
@@ -444,17 +487,14 @@
                   </div>
                   <div class="collapse" id="list2">
                     <div class="">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life
-                      accusamus terry richardson ad squid. Nihil anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt
-                      sapiente ea proident.
+                      Siswa berhak akan mendapatkan jatah makan 3x sehari dan asrama secara gratis selama bimbingan supercamp berlangsung
                     </div>
                   </div>
                 </li>
                 <li>
-                    <div class="sc-list d-flex flex-row">
+                    <div class="sc-list d-flex flex-row justify-content-between">
                       <div class="sc-list-title">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit?
+                        Apakah pendatarannya berbayar?
                       </div>
                       <a
                         class=""
@@ -468,17 +508,14 @@
                     </div>
                     <div class="collapse" id="list3">
                       <div class="">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life
-                        accusamus terry richardson ad squid. Nihil anim keffiyeh
-                        helvetica, craft beer labore wes anderson cred nesciunt
-                        sapiente ea proident.
+                        Segala proses pendaftaran hingga supercamp berlangsung diberikan secara gratis
                       </div>
                     </div>
                   </li>
                   <li>
-                      <div class="sc-list d-flex flex-row">
+                      <div class="sc-list d-flex flex-row justify-content-between">
                         <div class="sc-list-title">
-                          Lorem ipsum dolor, sit amet consectetur adipisicing elit?
+                          Semua jurusan boleh mendaftar?
                         </div>
                         <a
                           class=""
@@ -492,10 +529,7 @@
                       </div>
                       <div class="collapse" id="list4">
                         <div class="">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life
-                          accusamus terry richardson ad squid. Nihil anim keffiyeh
-                          helvetica, craft beer labore wes anderson cred nesciunt
-                          sapiente ea proident.
+                          Semua siswa dari berbagai jurusan boleh mendaftar, namun bimbingan yang diberikan hanya untuk jurusan ipa
                         </div>
                       </div>
                     </li>
@@ -592,7 +626,16 @@
           });
           $(".modal-close").click(function(event){
             modal.style.display = "none"
-          })
+          });
+
+          var modalmoji = document.getElementById("modalmojiku");
+          $(".belum").click(function(event){
+            modalmoji.style.display = "flex"
+          });
+
+          $('.modalmoji-close').click(function(event){
+            modalmoji.style.display = "none"
+          });
 
         });
 
